@@ -9,6 +9,9 @@ const newPerson = function(firstName ='Anonymous', lastName ='Person', age, marr
     married : married,
     goingOn :function(){
 return this.age +1
+    },
+    ageUp :function(){
+      return this.age ++
     }
   }
 }
