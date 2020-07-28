@@ -16,6 +16,10 @@ return this.age +1
     getFullName: function(){
       return `${this.firstName} ${this.lastName}`
     }
+  ,
+  marry : function(){
+   return this.married = true 
+  }
   }
 }
 
