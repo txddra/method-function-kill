@@ -12,6 +12,9 @@ return this.age +1
     },
     ageUp :function(){
       return this.age ++
+    },
+    getFullName: function(){
+      return `${this.firstName} ${this.lastName}`
     }
   }
 }
