@@ -23,6 +23,10 @@ return this.age +1
    person.married = true;
    person.spouseName = this.getFullName(person);
    this.spouseName = person.getFullName();
+  },
+  divorce:function(){
+    this.married = false;
+    
   }
   }
 }
