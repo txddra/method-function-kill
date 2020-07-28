@@ -1,33 +1,32 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-const newPerson = function(firstName ='Anonymous', lastName ='Person', age, married = false){
-  return{
-    firstName :firstName,
+const newPerson = function (firstName = 'Anonymous', lastName = 'Person', age, married = false) {
+  return {
+    firstName: firstName,
     lastName: lastName,
     age: age,
-    married : married,
-    goingOn :function(){
-return this.age +1
+    married: married,
+    goingOn: function () {
+      return this.age + 1
     },
-    ageUp :function(){
-      return this.age ++;
+    ageUp: function () {
+      return this.age++;
     },
-    getFullName: function(){
+    getFullName: function () {
       return `${this.firstName} ${this.lastName}`;
+    },
+    marry: function (person) {
+
+      this.married = true;
+      person.married = true;
+      person.spouseName = this.getFullName(person);
+      this.spouseName = person.getFullName();
+    },
+    divorce: function (person) {
+      this.married = false;
+      person.married = false;
     }
-  ,
-  marry : function(person){
-   
-   this.married = true;
-   person.married = true;
-   person.spouseName = this.getFullName(person);
-   this.spouseName = person.getFullName();
-  },
-  divorce:function(){
-    this.married = false;
-    
-  }
   }
 }
 
