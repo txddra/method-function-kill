@@ -26,6 +26,9 @@ const newPerson = function (firstName = 'Anonymous', lastName = 'Person', age, m
     divorce: function (person) {
       this.married = false;
       person.married = false;
+      delete this.spouseName;
+      delete person.spouseName 
+
     }
   }
 }
