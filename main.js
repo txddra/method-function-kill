@@ -19,8 +19,9 @@ return this.age +1
   ,
   marry : function(person){
    
-   this.married = true
-   person.married = true 
+   this.married = true,
+   person.married = true
+   person.spouseName = this.getFullName(person) 
   }
   }
 }
