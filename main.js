@@ -6,12 +6,16 @@ const newPerson = function(firstName ='Anonymous', lastName ='Person', age, marr
     firstName :firstName,
     lastName: lastName,
     age: age,
-    married : married
-
+    married : married,
+    goingOn :function(){
+return this.age +1
+    }
   }
 }
 
-
+// goingOn = function(){
+// return .age + 1
+// } 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
  *********************************/
