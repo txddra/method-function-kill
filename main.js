@@ -11,17 +11,18 @@ const newPerson = function(firstName ='Anonymous', lastName ='Person', age, marr
 return this.age +1
     },
     ageUp :function(){
-      return this.age ++
+      return this.age ++;
     },
     getFullName: function(){
-      return `${this.firstName} ${this.lastName}`
+      return `${this.firstName} ${this.lastName}`;
     }
   ,
   marry : function(person){
    
-   this.married = true,
-   person.married = true
-   person.spouseName = this.getFullName(person) 
+   this.married = true;
+   person.married = true;
+   person.spouseName = this.getFullName(person);
+   this.spouseName = person.getFullName();
   }
   }
 }
