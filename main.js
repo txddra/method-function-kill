@@ -1,9 +1,10 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-const newPerson = function(){
+const newPerson = function(firstName ='Anonymous'){
   return{
-    
+    firstName :firstName,
+
   }
 }
 
