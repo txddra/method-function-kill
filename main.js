@@ -17,8 +17,10 @@ return this.age +1
       return `${this.firstName} ${this.lastName}`
     }
   ,
-  marry : function(){
-   return this.married = true 
+  marry : function(person){
+   
+   this.married = true
+   person.married = true 
   }
   }
 }
